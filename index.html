@@ -26,7 +26,7 @@ flowplayer("player",
 },
 {
 	clip: {
-		url: "http://vaio.mithis.com:8080/webcam.flv",
+		url: "http://" + window.location.hostname + ":8080/webcam.flv",
 		scaling: "fit", 
 		bufferLength: "0"
 	},
@@ -48,12 +48,12 @@ flowplayer("player",
 
 function lowq() {
 	$('#player').css('max-height', '786px');
-	$f().play('http://vaio.mithis.com:8080/webcam-lite.flv');
+	$f().play('http://' + window.location.hostname + ':8080/webcam-lite.flv');
 }
 
 function highq() {
 	$('#player').css('max-height', '1600px');
-	$f().play('http://vaio.mithis.com:8080/webcam.flv');
+	$f().play('http://' + window.location.hostname + ':8080/webcam.flv');
 }
 
 		</script>
